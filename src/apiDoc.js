@@ -1,10 +1,14 @@
 import swaggerUI from 'swagger-ui-express'
 import { readFile } from 'fs/promises'
 
+const CSS_URL =
+  'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css'
+
 const swaggerJson = JSON.parse(await readFile(new URL('./swagger.json', import.meta.url)))
 
 const swaggerUIOptions = {
   explorer: true,
+  customCssUrl: CSS_URL,
   swaggerOptions: {
     // deepLinking: true,
     // defaultModelExpandDepth: 3,
