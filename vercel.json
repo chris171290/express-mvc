@@ -8,14 +8,18 @@
     "config": { "includeFiles": ["src/dist/**"] }
    },
    {
-    "src": "src/public/swagger-ui1.css",
+    "src": "src/public/**",
     "use": "@vercel/static"
    }
   ],
   "routes": [
-   {
-    "src": "/(.*)",
-    "dest": "/src/server-with-mysql.js"
-   }
+    {
+      "src": "/(.*)",
+      "dest": "/src/server-with-mysql.js"
+    },
+    {
+      "src": "/(.+\\.[a-z]+)$",
+      "dest": "/public/$1"
+    }
   ]
  }
