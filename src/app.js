@@ -1,4 +1,3 @@
-import path from 'node:path'
 import express from 'express'
 import { createMovieRouter } from './routes/movies.js'
 import { corsMiddleware, errorLogger, errorResponder, invalidPathHandler } from './middlewares/index.js'
@@ -7,8 +6,6 @@ import { swaggerDocs } from './apiDoc.js'
 
 export const createApp = ({ movieModel }) => {
   const app = express()
-  const ROOT_FOLDER = path.join(process.cwd(), '..')
-  const SRC_FOLDER = path.join(ROOT_FOLDER, 'src')
   const PORT = process.env.PORT || 3000
 
   app.use(logger('dev'))
@@ -18,8 +15,7 @@ export const createApp = ({ movieModel }) => {
   app.disable('x-powered-by')
 
   // Rutas
-  app.use('/public', express.static(path.join('./src/public')))
-  app.get('/', (req, res) => res.redirect('/api-docs/v1'))
+  app.get('/', (req, res) => res.send('<h1>Hola<h1/>'))
   app.use('/v1/movies', createMovieRouter({ movieModel }))
   swaggerDocs(app)
 
