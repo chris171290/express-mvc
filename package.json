@@ -5,6 +5,7 @@
   "type": "module",
   "main": "server-with-mysql.js",
   "scripts": {
+    "start": "node ./src/server-with-mysql.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --env-file=.env --watch ./src/app.js",
     "dev:mysql": "node --env-file=.env --watch ./src/server-with-mysql.js",
