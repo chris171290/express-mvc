@@ -15,7 +15,7 @@ export const createApp = ({ movieModel }) => {
   app.disable('x-powered-by')
 
   // Rutas
-  app.get('/', (req, res) => res.send('<h1>Hola<h1/>'))
+  app.get('/', (req, res) => res.redirect('/api-docs/v1'))
   app.use('/v1/movies', createMovieRouter({ movieModel }))
   swaggerDocs(app)
 
