@@ -22,8 +22,6 @@ export class MovieModel {
       if (genres.length === 0) return []
 
       const [{ id: idGenre }] = genres
-      console.log(genres)
-      console.log(idGenre)
 
       const queryByGenre = `
       SELECT BIN_TO_UUID(m.id) id, m.title, m.year, m.director, m.duration, m.poster, m.rate, g.name
@@ -33,7 +31,6 @@ export class MovieModel {
       WHERE g.id = ?`
 
       const [moviesByGenre] = await connection.query(queryByGenre, [idGenre])
-      console.log(moviesByGenre)
       return moviesByGenre
     }
 
