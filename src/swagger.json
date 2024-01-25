@@ -18,11 +18,11 @@
     },
     "servers": [
       {
-        "url":"http://localhost:3000/v1",
+        "url":"https://express-mvc-five.vercel.app/v1",
         "description": "Dev server"
       },
       {
-        "url":"https://localhost:3000/v1",
+        "url":"https://express-mvc-five.vercel.app/v1",
         "description": "Pro server"
       }
     ],
