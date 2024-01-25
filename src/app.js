@@ -19,7 +19,7 @@ export const createApp = ({ movieModel }) => {
   app.use('/v1/movies', createMovieRouter({ movieModel }))
   swaggerDocs(app)
 
-  app.use(express.static('public'))
+  // app.use(express.static('public'))
   app.use(errorLogger)
   app.use(errorResponder)
   app.use(invalidPathHandler)
