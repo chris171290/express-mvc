@@ -123,6 +123,28 @@
           "items": {
             "$ref": "#/components/schemas/Movie"
           }
+        },
+        "ErrorMessage" :{
+          "type": "object",
+          "properties": {
+            "success":{
+              "type": "boolean",
+              "description": "The status of process"
+            },
+            "status": {
+              "type": "number",
+              "format": "int32",
+              "description": "The http status code"
+            },
+            "message": {
+              "type": "string",
+              "description": "The description of the error"
+            },
+            "stack": {
+              "type": "object",
+              "description": "The stack of error"
+            }
+          }
         }
       }
     },
@@ -186,10 +208,24 @@
               }
             },
             "400": {
-              "description": "Bad request"
+              "description": "Bad request",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorMessage"
+                  }
+                }
+              }
             },
             "500": {
-              "description": "Some server error"
+              "description": "Some server error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ErrorMessage"
+                  }
+                }
+              }
             }
           }
         }
