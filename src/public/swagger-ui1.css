@@ -1,6 +1,6 @@
 .swagger-ui {
   color: #3b4151;
-  font-family: sans-serif/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+  font-family: sans-serif
 }
 
 .swagger-ui html {
@@ -123,10 +123,6 @@
   text-transform: none
 }
 
-.swagger-ui [type=reset],.swagger-ui [type=submit],.swagger-ui button,.swagger-ui html [type=button] {
-  -webkit-appearance: button
-}
-
 .swagger-ui [type=button]::-moz-focus-inner,.swagger-ui [type=reset]::-moz-focus-inner,.swagger-ui [type=submit]::-moz-focus-inner,.swagger-ui button::-moz-focus-inner {
   border-style: none;
   padding: 0
@@ -168,7 +164,6 @@
 }
 
 .swagger-ui [type=search] {
-  -webkit-appearance: textfield;
   outline-offset: -2px
 }
 
@@ -3305,11 +3300,6 @@
   .swagger-ui .fw9-l {
       font-weight: 900
   }
-}
-
-.swagger-ui .input-reset {
-  -webkit-appearance: none;
-  -moz-appearance: none
 }
 
 .swagger-ui .button-reset::-moz-focus-inner,.swagger-ui .input-reset::-moz-focus-inner {
