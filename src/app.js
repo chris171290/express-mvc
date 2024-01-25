@@ -18,6 +18,7 @@ export const createApp = ({ movieModel }) => {
   app.disable('x-powered-by')
 
   // Rutas
+  console.log(path.join(SRC_FOLDER, 'public'))
   app.use('/public', express.static(path.join(SRC_FOLDER, 'public')))
   app.get('/', (req, res) => res.redirect('/api-docs/v1'))
   app.use('/v1/movies', createMovieRouter({ movieModel }))
