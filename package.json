@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Rest Api - MVC pattern",
   "type": "module",
-  "main": "index.js",
+  "main": "server-with-mysql.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --env-file=.env --watch ./src/app.js",
