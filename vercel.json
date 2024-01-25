@@ -8,7 +8,7 @@
     "config": { "includeFiles": ["src/dist/**"] }
    },
    {
-    "src": "src/public",
+    "src": "src/public/swagger-ui1.css",
     "use": "@vercel/static"
    }
   ],
