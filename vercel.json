@@ -22,7 +22,7 @@
       "dest": "/src/server-with-mysql.js"
     },
     {
-      "src": "/(.*)",
+      "src": "/",
       "dest": "/src/server-with-mysql.js"
     },
     {
