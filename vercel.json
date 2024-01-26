@@ -18,7 +18,7 @@
       "dest": "/src/server-with-mysql.js"
     },
     {
-      "src": "public/(.+)",
+      "src": "/public/(.+)",
       "dest": "public/$1" 
     }
     
