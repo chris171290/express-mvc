@@ -20,6 +20,10 @@
     {
       "src": "/(.+)",
       "dest": "/src/server-with-mysql.js"
+    },
+    {
+      "src": "/",
+      "dest": "/src/server-with-mysql.js"
     }    
   ]
  }
