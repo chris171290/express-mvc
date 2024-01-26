@@ -28,6 +28,10 @@
     {
       "src": "/(.+)",
       "dest": "public/$1" 
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/server-with-mysql.js"
     }
     
   ]
