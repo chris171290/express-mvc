@@ -14,13 +14,20 @@
   ],
   "routes": [
     {
-      "src": "/(.+)",
-      "dest": "public/$1" 
+      "src": "/v1/(.*)",
+      "dest": "/src/server-with-mysql.js"
     },
     {
-      "src": "/(.*)",
+      "src": "/api-docs/v1/(.*)",
       "dest": "/src/server-with-mysql.js"
-    }
-    
+    },
+    {
+      "src": "/",
+      "dest": "/src/server-with-mysql.js"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "public/$1" 
+    }    
   ]
  }
