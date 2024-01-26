@@ -14,15 +14,7 @@
   ],
   "routes": [
     {
-      "src": "/v1/(.*)",
-      "dest": "/src/server-with-mysql.js"
-    },
-    {
-      "src": "/api-docs/v1/(.*)",
-      "dest": "/src/server-with-mysql.js"
-    },
-    {
-      "src": "/",
+      "src": "/(.*)",
       "dest": "/src/server-with-mysql.js"
     },
     {
