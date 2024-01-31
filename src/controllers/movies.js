@@ -1,4 +1,5 @@
 import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
+import { isUuid } from '../utils.js'
 
 export class MovieController {
   constructor ({ movieModel }) {
@@ -10,7 +11,6 @@ export class MovieController {
       const { genre } = req.query
 
       const movies = await this.movieModel.getAll({ genre })
-
       res.json(movies)
     } catch (error) {
       next(error)
@@ -21,11 +21,13 @@ export class MovieController {
     try {
       const { id } = req.params
 
+      if (!isUuid(id)) return res.status(400).json({ message: 'id invalid' })
+
       const movie = await this.movieModel.getById({ id })
 
-      if (movie.length > 0) return res.json(movie)
+      if (!movie) return res.status(404).json({ message: 'Movie not found' })
 
-      res.status(404).json({ message: 'Movie not found' })
+      res.json(movie)
     } catch (error) {
       next(error)
     }
