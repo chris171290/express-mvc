@@ -20,6 +20,16 @@ This is a REST API application made with Express using MVC patterns, documented 
 **Databases:** Mysql
 
 
+## Screenshots
+
+![App Screenshot](https://cdn.sanity.io/images/5fomor9u/production/9e9ddaacf823de21d88666f6a7432589b7c7b090-1365x767.png)
+
+
+## Demo
+
+https://express-mvc-five.vercel.app/api-docs/v1/
+
+
 ## Run Locally
 
 Clone the project
@@ -77,12 +87,3 @@ To run tests, run the following command
 
 If you have any feedback, please reach out to us at christian_santana.r@hotmail.com or visit website www.christiansantana.com and leave a message.
 
-
-## Screenshots
-
-![App Screenshot](https://cdn.sanity.io/images/5fomor9u/production/9e9ddaacf823de21d88666f6a7432589b7c7b090-1365x767.png)
-
-
-## Demo
-
-https://express-mvc-five.vercel.app/api-docs/v1/
