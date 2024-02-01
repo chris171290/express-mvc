@@ -78,7 +78,7 @@ To run tests, run the following command
 ## Authors
 
 - Github: [@chris171290](https://github.com/chris171290) 
-- Website: [www.christiansantanas.com](https://github.com/chris171290)
+- Website: [www.christiansantanas.com](https://www.christiansantanas.com)
 - LinkedIn: [Christian Santanas](https://www.linkedin.com/in/csantanas/)
 - Email: [christian_santana.r@hotmail.com](https://www.linkedin.com/in/csantanas/)
 
