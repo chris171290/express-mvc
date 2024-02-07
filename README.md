@@ -34,7 +34,7 @@ This is a REST API application made with Express using MVC patterns, documented 
 
 ## Demo
 
-https://express-mvc-five.vercel.app/api-docs/v1/
+https://express-mvc-five.vercel.app
 
 
 ## Run Locally
