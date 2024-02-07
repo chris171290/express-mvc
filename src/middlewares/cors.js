@@ -4,7 +4,8 @@ export const corsMiddleware = () => cors({
   origin: (origin, callback) => {
     const ACCEPTED_ORIGINS = [
       'http://localhost:3000',
-      'https://express-mvc-five.vercel.app'
+      'https://express-mvc-five.vercel.app',
+      'https://express-mvc-five-preview.vercel.app'
     ]
 
     if (ACCEPTED_ORIGINS.includes(origin) || !origin) {

@@ -18,7 +18,7 @@
     },
     "servers": [
       {
-        "url":"https://express-mvc-five.vercel.app/v1",
+        "url":"https://express-mvc-five-preview.vercel.app/v1",
         "description": "Dev server"
       },
       {

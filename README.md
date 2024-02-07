@@ -1,3 +1,6 @@
+[![Vercel Preview Deployment](https://github.com/chris171290/express-mvc-vercel-actions/actions/workflows/preview.yaml/badge.svg)](https://github.com/chris171290/express-mvc-vercel-actions/actions/workflows/preview.yaml)
+
+[![Vercel Production Deployment](https://github.com/chris171290/express-mvc-vercel-actions/actions/workflows/production.yaml/badge.svg)](https://github.com/chris171290/express-mvc-vercel-actions/actions/workflows/production.yaml)
 
 ![Logo](https://www.christiansantanas.com/assets/cs-57SBDUU4.png)
 
@@ -18,6 +21,10 @@ This is a REST API application made with Express using MVC patterns, documented 
 **Architecture:** MVC
 
 **Databases:** Mysql
+
+**CI/CD:** Github Actions
+
+**Deployed:** Vercel
 
 
 ## Screenshots
